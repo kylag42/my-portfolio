@@ -4,19 +4,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-amber-50">
-      <section className="flex min-h-[80vh] items-center justify-center px-6">
-        <div className="max-w-3xl text-center">
-          <div className="mb-6 flex justify-center">
-          <Image
-          src="/images/profile.jpg"
-          alt="Profile picture"
-          width={200}
-          height={200}
-          className="rounded-full object-cover"
-          />
-        </div>
-          <h1 className="text-4xl font-bold tracking-wide sm:text-6xl">
+    <main>
+      <section className="flex min-h-[80vh] items-center px-6">
+        <div className="mx-auto grid w-full max-w-4xl items-center gap-6 md:grid-cols-2">
+
+          <div>
+            <h1 className="text-4xl font-bold tracking-wide sm:text-6xl">
             Hi, I'm Kyla.
           </h1>
 
@@ -24,11 +17,22 @@ export default function Home() {
             A computer science student passionate about building software and developing my skills across modern technologies.
           </p>
 
-          <div className="mt-8 flex justify-center gap-4">
+          <div className="mt-8">
             <Button className="h-14 px-6 text-lg bg-[#6E9079] text-white tracking-widest">
               CONTACT ME
               <ArrowRight />
             </Button>
+          </div>
+          </div>
+
+          <div className="flex justify-center md:justify-end">
+            <Image
+          src="/images/profile.jpg"
+          alt="Profile picture"
+          width={350}
+          height={350}
+          className="rounded-full object-cover"
+          />
           </div>
         </div>
       </section>
