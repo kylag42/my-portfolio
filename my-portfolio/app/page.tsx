@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -18,10 +20,12 @@ export default function Home() {
           </p>
 
           <div className="mt-8">
-            <Button className="h-14 px-6 text-lg bg-[#6E9079] text-white tracking-widest">
-              CONTACT ME
-              <ArrowRight />
-            </Button>
+            <Link href="/contact">
+              <Button className="h-14 px-6 text-lg bg-[#6E9079] text-white tracking-widest">
+                CONTACT ME
+                <ArrowRight />
+              </Button>
+            </Link>
           </div>
           </div>
 
