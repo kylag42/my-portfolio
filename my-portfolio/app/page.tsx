@@ -2,6 +2,9 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
 
 
 export default function Home() {
@@ -12,31 +15,62 @@ export default function Home() {
 
           <div>
             <h1 className="text-4xl font-bold tracking-wide sm:text-6xl">
-            Hi, I'm Kyla.
-          </h1>
+              Hi, I'm Kyla.
+            </h1>
 
-          <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
-            A computer science student passionate about building software and developing my skills across modern technologies.
-          </p>
+            <p className="mx-auto mt-2 max-w-2xl text-lg text-muted-foreground">
+              A computer science student passionate about building software and developing my skills across modern technologies.
+            </p>
 
-          <div className="mt-8">
-            <Link href="/contact">
-              <Button className="h-14 px-6 text-lg bg-[#6E9079] text-white tracking-widest">
-                CONTACT ME
-                <ArrowRight />
-              </Button>
-            </Link>
-          </div>
+            <div className="mt-8">
+              <Link href="/contact">
+                <Button className="h-14 px-6 text-lg bg-[#6E9079] text-white tracking-widest">
+                  CONTACT ME
+                  <ArrowRight />
+                </Button>
+              </Link>
+            </div>
+            <div className="flex items-center justify-start gap-2 mt-4">
+              <a
+                href="https://linkedin.com/in/kylamgray"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-muted-foreground transition-colors hover:text-foreground">
+
+                <FaLinkedin className="h-8 w-8" />
+              </a>
+
+              <a
+                href="https://github.com/kylag42"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Github"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+              >
+                <SiGithub className="h-8 w-8" />
+              </a>
+
+              <a
+              href="mailto:kylag42@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="email"
+              className="text-muted-foreground transition-colors hover:text-foreground">
+                <Mail className="h-8 w-8"/> 
+              </a>
+              
+            </div>
           </div>
 
           <div className="flex justify-center md:justify-end">
             <Image
-          src="/images/profile.jpg"
-          alt="Profile picture"
-          width={350}
-          height={350}
-          className="rounded-full object-cover"
-          />
+              src="/images/profile.jpg"
+              alt="Profile picture"
+              width={350}
+              height={350}
+              className="rounded-full object-cover"
+            />
           </div>
         </div>
       </section>

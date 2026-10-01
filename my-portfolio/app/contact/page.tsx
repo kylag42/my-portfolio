@@ -9,12 +9,12 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { SiGithub } from "react-icons/si";
-import { FaLinkedin } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa";
 
 
 export default function ContactPage() {
     return (
-        <section className="mx-auto max-w-6xl px-6 py-10">
+        <section className="mx-auto max-w-6xl px-6 py-6">
             <Card className="w-full overflow-hidden py-0">
                 <div className="grid md:grid-cols-2">
 
